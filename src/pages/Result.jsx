@@ -12,14 +12,13 @@ import { useQuery } from "react-query";
 export const Result = () => {
   const location = useLocation()
   async function fetchPalletes(){
-      const response = await getPalletes(location.state)
-      return response
+    const response = await getPalletes(location.state)
+    return response
   }
-  const { data, isLoading, refetch, isRefetching } = useQuery('palettes', fetchPalletes, {staleTime: Infinity})
+  const { data, isLoading, refetch, isRefetching } = useQuery('palettes', fetchPalletes, { staleTime: Infinity })
   return (
     <>
-    
-    <div className="w-[976px] mx-auto flex flex-col border-black">
+    <div className="w-[976px] max-[976px]:w-[95%] mx-auto flex flex-col border-black">
         <div className="w-full flex justify-between my-[2rem]">
             <div className='flex items-center gap-[12px]'>
                 <img src={stars} alt="star" width={'40px'}/>
