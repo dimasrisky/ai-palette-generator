@@ -1,45 +1,33 @@
 /* eslint-disable react/prop-types */
 import './css/alert.css'
 import { motion } from 'framer-motion';
+import { checkBordered, dangerBordered } from '../assets/icons/Icons'
 
-export default function Alert({ setIsShowAlert }){
+export default function Alert({ setIsShowAlert, type, title, description }){
     return (
       <>
         <motion.div 
-            className="error absolute z-10"
-            initial={{ top: '-3rem' }}
-            animate={{ top: '2rem' }}
-            exit={{ top: '-3rem' }}
-            transition={{ ease: 'easeInOut', duration: 0.8, type: 'spring', bounce: 0.5 }}
+          className="fixed z-20 top-0 inset-x-0 w-full max-w-sm mx-auto bg-white p-4 rounded-lg shadow-lg flex items-center justify-between gap-4 mt-4"
+          initial={{ top: '-4rem' }}
+          animate={{ top: '0.5rem' }}
+          exit={{ top: '-10rem' }}
+          transition={{ ease: 'easeInOut', duration: 0.6, type: 'spring', bounce: 0.5 }}
         >
-          <div className="error__icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              viewBox="0 0 24 24"
-              height="24"
-              fill="none"
-            >
-              <path
-                fill="#393a37"
-                d="m13 13h-2v-6h2zm0 4h-2v-2h2zm-1-15c-1.3132 0-2.61358.25866-3.82683.7612-1.21326.50255-2.31565 1.23915-3.24424 2.16773-1.87536 1.87537-2.92893 4.41891-2.92893 7.07107 0 2.6522 1.05357 5.1957 2.92893 7.0711.92859.9286 2.03098 1.6651 3.24424 2.1677 1.21325.5025 2.51363.7612 3.82683.7612 2.6522 0 5.1957-1.0536 7.0711-2.9289 1.8753-1.8754 2.9289-4.4189 2.9289-7.0711 0-1.3132-.2587-2.61358-.7612-3.82683-.5026-1.21326-1.2391-2.31565-2.1677-3.24424-.9286-.92858-2.031-1.66518-3.2443-2.16773-1.2132-.50254-2.5136-.7612-3.8268-.7612z"
-              />
-            </svg>
+          <div className={`w-10 h-10 flex justify-center items-center rounded-full ${type === 'success' ? 'bg-green-100' : 'bg-red-100' }`}>
+            <img src={type === 'success' ? checkBordered : dangerBordered } alt="icon" width={'20px'} />
           </div>
-          <div className="error__title">Please fill the input</div>
-          <div className="error__close" onClick={() => setIsShowAlert(false)}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              viewBox="0 0 20 20"
-              height="20"
-            >
-              <path
-                fill="#393a37"
-                d="m15.8333 5.34166-1.175-1.175-4.6583 4.65834-4.65833-4.65834-1.175 1.175 4.65833 4.65834-4.65833 4.6583 1.175 1.175 4.65833-4.6583 4.6583 4.6583 1.175-1.175-4.6583-4.6583z"
-              />
-            </svg>
+          <div className="flex-grow">
+            <p className={`${type === 'success' ? 'text-green-700' : 'text-red-700' } text-sm font-bold`}>{title}</p>
+            <p className="text-gray-500 text-sm">{description}</p>
           </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" className="w-4 h-4 text-gray-500 cursor-pointer" onClick={() => setIsShowAlert(false)}>
+            <path
+              fill="currentColor"
+              d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z"
+              clipRule="evenodd"
+              fillRule="evenodd"
+            ></path>
+          </svg>
         </motion.div>
       </>
     );

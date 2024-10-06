@@ -22,7 +22,7 @@ export default function InputKeyword(){
   return (
     <>
     <AnimatePresence>
-      {isShowAlert && <Alert setIsShowAlert={setIsShowAlert} />}
+      {isShowAlert && <Alert type={'danger'} title={'Missing Keyword'} description={'Please fill up the keyword'} setIsShowAlert={setIsShowAlert} />}
     </AnimatePresence>
       <div className='w-[90vw] md:w-[1024px] md:justify-center flex items-center gap-[12px] flex-col md:flex-row'>
         <input type="text" className='w-full md:w-[500px] pl-[28px] h-[55px] text-[18px] font-inter border border-[#DDDDDD] bg-[#F0F3F7] rounded-[10px] outline-none text-primary-gray transition-all duration-300 ease-in-out focus:ring-2 focus:ring-primary-blue focus:border-primary-blue focus:bg-white' placeholder='Type your keyword...' onChange={(event) => setInputKeyword(event.target.value)} value={inputKeyword}/>

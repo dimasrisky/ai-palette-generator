@@ -5,5 +5,7 @@ import logo from './logo.svg'
 import plus from './plus.svg'
 import repeat from './repeat.svg'
 import stars from './stars.svg'
+import checkBordered from './check-bordered.svg'
+import dangerBordered from './danger-bordered.svg'
 
-export { arrow, check, copy, logo, plus, repeat, stars }
+export { arrow, check, copy, logo, plus, repeat, stars, checkBordered, dangerBordered }
