@@ -5,7 +5,7 @@ import copy from "../assets/icons/copy.svg";
 import check from "../assets/icons/check.svg";
 
 
-export default function BoxColor({ color, hex, index}){
+export default function BoxColor({ color, hex, index }){
     const [isCopied, setIsCopied] = useState(false)
     async function copyTextToClipboard(text) {
         if ('clipboard' in navigator) {
@@ -18,6 +18,7 @@ export default function BoxColor({ color, hex, index}){
     }
     return (
         <motion.div 
+            key={hex}
             className="w-full sm:w-[20%] flex flex-col items-center gap-[25px]"
             initial={{opacity: 0, scale: 0}}
             animate={{opacity: 1, scale: 1}}
