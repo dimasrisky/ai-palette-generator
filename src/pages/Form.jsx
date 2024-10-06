@@ -1,7 +1,7 @@
 import stars from '../assets/icons/stars.svg'
-import { InputKeyword } from '../components/InputKeyword'
+import InputKeyword from '../components/InputKeyword'
 // w-[976px]
-const Form = () => {
+export default function Form(){
   return (
     <>
         <div className="w-[100vw] h-[100vh] flex justify-center items-center">
@@ -19,5 +19,3 @@ const Form = () => {
     </>
   )
 }
-
-export default Form

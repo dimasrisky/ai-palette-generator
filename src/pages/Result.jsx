@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import stars from '../assets/icons/stars.svg'
 import repeat from "../assets/icons/repeat.svg";
 import plus from "../assets/icons/plus.svg";
-import { BoxColor } from "../components/BoxColor";
+import BoxColor from "../components/BoxColor";
 import getPalletes from "../functions/getPalletes";
 import Loading from "../components/Loading";
 import { motion } from "framer-motion";
 import { useQuery } from "react-query";
 
-export const Result = () => {
+export default function Result(){
   const location = useLocation()
   const { data, isLoading, refetch, isRefetching } = useQuery('palettes', () => getPalletes(location.state), { staleTime: Infinity })
   return (

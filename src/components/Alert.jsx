@@ -2,7 +2,7 @@
 import './css/alert.css'
 import { motion } from 'framer-motion';
 
-const Alert = ({ setIsShowAlert }) => {
+export default function Alert({ setIsShowAlert }){
     return (
       <>
         <motion.div 
@@ -44,5 +44,3 @@ const Alert = ({ setIsShowAlert }) => {
       </>
     );
 };
-
-export default Alert

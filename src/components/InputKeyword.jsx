@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import Alert from './Alert'
 
-export const InputKeyword = () => {
+export default function InputKeyword(){
   const [inputKeyword, setInputKeyword] = useState('')
   const [isShowAlert, setIsShowAlert] = useState(false)
   const navigate = useNavigate()

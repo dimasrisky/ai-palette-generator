@@ -5,7 +5,7 @@ import copy from "../assets/icons/copy.svg";
 import check from "../assets/icons/check.svg";
 
 
-export const BoxColor = ({ color, hex, index}) => {
+export default function BoxColor({ color, hex, index}){
     const [isCopied, setIsCopied] = useState(false)
     async function copyTextToClipboard(text) {
         if ('clipboard' in navigator) {
