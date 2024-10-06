@@ -1,6 +1,6 @@
 import './css/loading.css'
 
-const Loading = () => {
+export default function Loading(){
   return (
     <div className='w-[100vw] h-[100vh] flex justify-center items-center fixed top-0 z-10 border bg-white bg-opacity-80'>
       <svg viewBox="0 0 240 240" height="240" width="240" className="pl">
@@ -54,5 +54,3 @@ const Loading = () => {
     </div>
   );
 };
-
-export default Loading;

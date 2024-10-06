@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { QueryClient, QueryClientProvider } from "react-query";
 import './index.css'
 import Form from './pages/Form.jsx'
-import { Result } from './pages/Result.jsx'
+import Result from './pages/Result.jsx'
 
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
