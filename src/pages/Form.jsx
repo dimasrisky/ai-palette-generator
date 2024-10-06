@@ -1,5 +1,5 @@
-import stars from '../assets/icons/stars.svg'
-import InputKeyword from '../components/InputKeyword'
+import { stars } from '../assets/icons/Icons'
+import { InputKeyword } from '../components/Components'
 // w-[976px]
 export default function Form(){
   return (

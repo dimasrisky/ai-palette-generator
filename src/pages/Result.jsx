@@ -1,11 +1,8 @@
 import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom";
-import stars from '../assets/icons/stars.svg'
-import repeat from "../assets/icons/repeat.svg";
-import plus from "../assets/icons/plus.svg";
-import BoxColor from "../components/BoxColor";
-import getPalletes from "../functions/getPalletes";
-import Loading from "../components/Loading";
+import { BoxColor, Loading } from "../components/Components";
+import { stars, repeat, plus } from '../assets/icons/Icons'
+import { getPalletes } from "../functions/Functions";
 import { motion } from "framer-motion";
 import { useQuery } from "react-query";
 
