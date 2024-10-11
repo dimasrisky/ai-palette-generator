@@ -2,9 +2,8 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { QueryClient, QueryClientProvider } from "react-query";
 import './index.css'
-import Form from './pages/Form.jsx'
-import Result from './pages/Result.jsx'
-import Home from './pages/Home.jsx';
+import { Form, Home, Result } from './pages/Pages.jsx'
+
 
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
