@@ -4,10 +4,12 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import './index.css'
 import Form from './pages/Form.jsx'
 import Result from './pages/Result.jsx'
+import Home from './pages/Home.jsx';
 
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
-  { path: '/', element: <Form /> },
+  { path: '/', element: <Home /> },
+  { path: '/form', element: <Form /> },
   { path: '/result', element: <Result /> }
 ])
 
