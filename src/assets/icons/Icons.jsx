@@ -1,11 +1,13 @@
-import arrow from './arrow.svg'
-import check from './check.svg'
-import copy from './copy.svg'
+import Arrow from './Arrow.jsx'
+import Check from './Check.jsx'
+import Copy from './Copy.jsx'
 import logo from './logo.svg'
-import plus from './plus.svg'
-import repeat from './repeat.svg'
-import stars from './stars.svg'
-import checkBordered from './check-bordered.svg'
-import dangerBordered from './danger-bordered.svg'
+import Plus from './Plus.jsx'
+import Repeat from './Repeat.jsx'
+import Star from './Star.jsx'
+import CheckBordered  from './CheckBordered.jsx'
+import DangerBordered from './DangerBordered.jsx'
+import Dot from './Dot.jsx'
+import Github from './Github.jsx'
 
-export { arrow, check, copy, logo, plus, repeat, stars, checkBordered, dangerBordered }
+export { Arrow, Check, Copy, logo, Plus, Repeat, Star, CheckBordered, DangerBordered, Dot, Github }
