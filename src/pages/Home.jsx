@@ -16,24 +16,24 @@ export default function Home() {
                 </div>
                 <div className='flex flex-col items-center'>
                     <div className='mt-[32px] flex items-center gap-6'>
-                        <Star style='fill-primary-white w-[80px]' />
-                        <h1 className='font-aeonik-bold text-[60px] text-primary-white drop-shadow-md'>Find Your Color Inspiration</h1>
+                        <Star style='fill-primary-white hidden sm:flex sm:w-[5vw]' />
+                        <h1 className='font-aeonik-bold text-[30px] text-primary-white drop-shadow-md sm:text-[5vw]'>Find Your Color Inspiration</h1>
                     </div>
-                    <h4 className='mt-[8px] font-aeonik-regular font-normal text-[22px] leading-[35px] text-primary-white max-w-[656.9px] text-center'>Input your keywords, and let our generator create beautiful color combinations for your projects.</h4>
+                    <h4 className='mt-[8px] font-aeonik-regular font-normal text-[14px] sm:text-[2vw] sm:leading-[38px] text-primary-white max-w-[90%] sm:max-w-[80%] text-center'>Input your keywords, and let our generator create beautiful color combinations for your projects.</h4>
                     <div className='flex items-center gap-[24px] mt-[52px]'>
                         <Link to={'/form'}>
-                            <div className='bg-primary-white bg-opacity-20 border-[0.9px] border-primary-white flex justify-center items-center w-[190px] h-[58px] rounded-[10px] transition-all duration-300 transform hover:bg-opacity-30 hover:scale-105'>
-                                <div className='flex items-center gap-[4px] text-primary-white'>
-                                <h4 className='text-[17px] font-aeonik-bold'>Launch App</h4>
-                                <Arrow style='w-[40px]' />
+                            <div className='bg-primary-white bg-opacity-20 border-[0.9px] border-primary-white flex justify-center items-center w-[150px] h-[48px] md:w-[170px] md:h-[55px] lg:w-[190px] lg:h-[58px] rounded-[10px] transition-all duration-300 transform hover:bg-opacity-30 hover:scale-105'>
+                                <div className='flex items-center gap-[2px] md:gap-[4px] text-primary-white'>
+                                <h4 className='text-[15px] md:text-[17px] font-aeonik-bold'>Launch App</h4>
+                                <Arrow style='w-[30px] md:w-[35px] lg:w-[40px]' />
                                 </div>
                             </div>
                         </Link>
                         <a href='https://github.com/dimasrisky/ai-palette-generator' target='_blank'>
-                            <div className='bg-primary-white flex justify-center items-center w-[170px] h-[58px] rounded-[10px] transition-all duration-300 transform hover:bg-opacity-90 hover:scale-105'>
-                                <div className='flex items-center gap-[12px] text-primary-white'>
-                                <Github style='w-[30px]' />
-                                <h4 className='text-[17px] text-primary-black font-aeonik-bold'>View Github</h4>
+                            <div className='bg-primary-white flex justify-center items-center w-[140px] h-[48px] md:w-[160px] md:h-[55px] lg:w-[170px] lg:h-[58px] rounded-[10px] transition-all duration-300 transform hover:bg-opacity-90 hover:scale-105'>
+                                <div className='flex items-center gap-[8px] md:gap-[12px] text-primary-white'>
+                                <Github style='w-[24px] md:w-[28px] lg:w-[30px]' />
+                                <h4 className='text-[15px] md:text-[17px] text-primary-black font-aeonik-bold'>View Github</h4>
                                 </div>
                             </div>
                         </a>
