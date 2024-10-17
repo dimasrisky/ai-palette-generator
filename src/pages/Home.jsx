@@ -22,9 +22,9 @@ export default function Home() {
                     <h4 className='mt-[8px] font-aeonik-regular font-normal text-[22px] leading-[35px] text-primary-white max-w-[656.9px] text-center'>Input your keywords, and let our generator create beautiful color combinations for your projects.</h4>
                     <div className='flex items-center gap-[24px] mt-[52px]'>
                         <Link to={'/form'}>
-                            <div className='bg-primary-white bg-opacity-20 border-[0.9px] border-primary-white flex justify-center items-center w-[160px] h-[58px] rounded-[10px]'>
-                                <div className='flex items-center gap-[12px] text-primary-white'>
-                                    <h4 className='text-[17px] font-aeonik-bold'>Open App</h4>
+                            <div className='bg-primary-white bg-opacity-20 border-[0.9px] border-primary-white flex justify-center items-center w-[190px] h-[58px] rounded-[10px]'>
+                                <div className='flex items-center gap-[4px] text-primary-white'>
+                                    <h4 className='text-[17px] font-aeonik-bold'>Launch App</h4>
                                     <Arrow style='w-[40px]' />
                                 </div>
                             </div>
