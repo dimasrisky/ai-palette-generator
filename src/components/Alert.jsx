@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './css/alert.css'
 import { motion } from 'framer-motion';
-import { checkBordered, dangerBordered } from '../assets/icons/Icons'
+import { CheckBordered, DangerBordered } from '../assets/icons/Icons'
 
 export default function Alert({ setIsShowAlert, type, title, description }){
     return (
@@ -14,7 +14,7 @@ export default function Alert({ setIsShowAlert, type, title, description }){
           transition={{ ease: 'easeInOut', duration: 0.6, type: 'spring', bounce: 0.5 }}
         >
           <div className={`w-10 h-10 flex justify-center items-center rounded-full ${type === 'success' ? 'bg-green-100' : 'bg-red-100' }`}>
-            <img src={type === 'success' ? checkBordered : dangerBordered } alt="icon" width={'20px'} />
+            {type === 'success' ? <CheckBordered style='w-[20px]' /> : <DangerBordered style='w-[20px]' /> }
           </div>
           <div className="flex-grow">
             <p className={`${type === 'success' ? 'text-green-700' : 'text-red-700' } text-sm font-bold`}>{title}</p>

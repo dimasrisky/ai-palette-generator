@@ -12,12 +12,15 @@ export default {
     extend: {
       colors: {
         'primary-black': '#191919',
-        'primary-gray': '#3C424D'
+        'primary-gray': '#3C424D',
+        'primary-white': '#f5f5f5'
       },
       fontFamily: {
         'nexa-bold': ['Nexa Heavy', 'sans-serif'],
         'nexa-regular': ['Nexa Extra Light', 'sans-serif'],
-        'inter': ['Inter', 'sans-serif']
+        'inter': ['Inter', 'sans-serif'],
+        'aeonik-bold': ['AeonikTRIAL Bold', 'sans-serif'],
+        'aeonik-regular': ['AeonikTRIAL Regular', 'sans-serif']
       },
     },
   },

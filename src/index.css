@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Registering Font */
 @font-face {
     font-family: 'Nexa Extra Light';
     src: url('./assets/fonts/Nexa-ExtraLight.ttf');
@@ -9,4 +11,14 @@
 @font-face {
     font-family: 'Nexa Heavy';
     src: url('./assets/fonts/Nexa-Heavy.ttf');
+}
+
+@font-face {
+    font-family: 'AeonikTRIAL Bold';
+    src: url('./assets/fonts/AeonikTRIAL-Bold.otf');
+}
+
+@font-face {
+    font-family: 'AeonikTRIAL Regular';
+    src: url('./assets/fonts/AeonikTRIAL-Regular.otf');
 }

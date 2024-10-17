@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { motion } from "framer-motion";
-import copy from "../assets/icons/copy.svg";
-import check from "../assets/icons/check.svg";
+import { Copy, Check } from "../assets/icons/Icons.jsx";
 
 
 export default function BoxColor({ color, hex, index }){
@@ -33,7 +32,8 @@ export default function BoxColor({ color, hex, index }){
                             <div className="flex items-center gap-[8px]">
                                 <h1 className="text-[#333] text-xs tracking-wide text-shadow-lg">{hex}</h1>
                                 <button onClick={() => copyTextToClipboard(hex)}>
-                                    <img src={isCopied ? check : copy} alt="copy" width={'12px'}/>
+                                    {/* <img src={isCopied ? check : copy} alt="copy" width={'12px'}/> */}
+                                    {isCopied ? <Check style="w-[12px]" /> : <Copy style="w-[12px]" />}
                                 </button>
                             </div>
                         </div>
@@ -46,7 +46,8 @@ export default function BoxColor({ color, hex, index }){
                 <div className="flex items-center gap-[8px]">
                     <p className="font-medium text-[12px]">{hex}</p>
                     <button onClick={() => copyTextToClipboard(hex)}>
-                        <img src={isCopied ? check : copy} alt="copy" width={'12px'}/>
+                        {/* <img src={isCopied ? check : copy} alt="copy" width={'12px'}/> */}
+                        {isCopied ? <Check style="w-[12px]" /> : <Copy style="w-[12px]" />}
                     </button>
                 </div>
             </div>
