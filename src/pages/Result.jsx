@@ -28,7 +28,7 @@ export default function Result(){
                 </Link>
             </div>
         </div>
-        <motion.div className="w-full flex flex-col sm:flex-row justify-between gap-5 mt-[0.5rem] sm:mt-[4rem]">
+        <motion.div className="w-full flex flex-col sm:flex-row justify-between gap-5 my-[2rem] sm:mt-[4rem]">
             {data?.palettes.map((el, index) => <BoxColor index={index} key={index} color={el.color} hex={el.hex} />)}
         </motion.div>
     </div>
