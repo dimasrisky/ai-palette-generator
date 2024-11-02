@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   return (
     <>
-        <div className={`w-screen h-screen flex justify-center items-center bg-[url('./src/assets/img/home-background.webp')] bg-center bg-cover bg-no-repeat`}>
+        <div className={`w-screen h-screen flex justify-center items-center bg-[url('/img/home-background.webp')] bg-center bg-cover bg-no-repeat`}>
             <Navbar />
             <div className='w-[1250px] flex flex-col items-center justify-center'>
                 <div className='bg-primary-white w-[236px] bg-opacity-40 border-[0.9px] border-primary-white flex justify-center items-center py-[10px] rounded-[8px]'>
